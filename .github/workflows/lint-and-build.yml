@@ -1,0 +1,29 @@
+name: Lint and build
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: pnpm/action-setup@v2.0.1
+        with:
+          version: 6.14.7
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          check-latest: true
+          cache: 'pnpm'
+      - name: Install dependencies
+        run: pnpm i
+      - name: Verify linting
+        run: pnpm lint
+      - name: Create release
+        run: pnpm release
+      - uses: actions/upload-artifact@v2
+        with:
+          name: build.zip
+          path: dist/build.zip
+          if-no-files-found: error
+          retention-days: 2

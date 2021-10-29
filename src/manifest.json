@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+
+  "name": "Improved Potato",
+  "description": "Chrome extension to manage bookmarks sanely",
+
+  "version": "1.0.0",
+
+  "icons": {
+    "16": "assets/icon16.png",
+    "48": "assets/icon48.png",
+    "128": "assets/icon128.png"
+  },
+
+  "permissions": [],
+
+  "options_ui": {
+    "page": "pages/options/index.html",
+    "open_in_tab": true
+  },
+
+  "action": {
+    "default_popup": "pages/popup/index.html"
+  }
+}
