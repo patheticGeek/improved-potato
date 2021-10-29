@@ -12,7 +12,7 @@
     "128": "assets/icon128.png"
   },
 
-  "permissions": [],
+  "permissions": ["bookmarks"],
 
   "options_ui": {
     "page": "pages/options/index.html",

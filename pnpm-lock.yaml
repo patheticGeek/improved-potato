@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@radix-ui/react-icons': ^1.0.3
   '@rollup/plugin-alias': ^3.1.8
   '@rollup/plugin-commonjs': ^17.1.0
   '@rollup/plugin-node-resolve': ^11.2.1
@@ -29,12 +30,15 @@ specifiers:
   tslib: ^2.3.1
   twind: ^0.16.16
   typescript: ^4.4.4
+  usehooks-ts: ^1.0.7
   webextension-polyfill: ^0.7.0
 
 dependencies:
+  '@radix-ui/react-icons': 1.0.3_react@17.0.2
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
   twind: 0.16.16_typescript@4.4.4
+  usehooks-ts: 1.0.7_react@17.0.2
   webextension-polyfill: 0.7.0
 
 devDependencies:
@@ -145,6 +149,14 @@ packages:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.13.0
     dev: true
+
+  /@radix-ui/react-icons/1.0.3_react@17.0.2:
+    resolution: {integrity: sha512-YbPAUZwTsvF/2H7IU35txaLUB+JNSV8GIhnswlqiFODP/P32t5op5keYUvQWsSj9TA0VLF367J24buUjIprn0w==}
+    peerDependencies:
+      react: ^16.x || ^17.x
+    dependencies:
+      react: 17.0.2
+    dev: false
 
   /@rollup/plugin-alias/3.1.8_rollup@2.58.3:
     resolution: {integrity: sha512-tf7HeSs/06wO2LPqKNY3Ckbvy0JRe7Jyn98bXnt/gfrxbe+AJucoNJlsEVi9sdgbQtXemjbakCpO/76JVgnHpA==}
@@ -2149,6 +2161,14 @@ packages:
     dependencies:
       punycode: 2.1.1
     dev: true
+
+  /usehooks-ts/1.0.7_react@17.0.2:
+    resolution: {integrity: sha512-SslMcPuhnxH3ZSDhVoUxJBins5UGe6DitnXcH7GlHhkOuD45SYL/dBCDxY/kvLnYNHusnzou8zHs+DMYbhNGSQ==}
+    peerDependencies:
+      react: ^17.0.2
+    dependencies:
+      react: 17.0.2
+    dev: false
 
   /util-deprecate/1.0.2:
     resolution: {integrity: sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=}
